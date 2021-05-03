@@ -1,0 +1,98 @@
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}
+
+@mixin font($font-family, $font-size, $font-color: #000) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+@mixin flex($justify: space-between, $align: center, $direction: column) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin flex-row($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center($width, $height) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: $width;
+    margin-left: $height;
+}
+
+@mixin respond-to($media) {
+
+    // from 0 to 767
+    @if $media==mobile {
+        @media screen and (max-width: $tablet - 1) {
+            @content;
+        }
+    }
+
+    // from 768 to 1023
+    @if $media==tablet {
+        @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+            @content;
+        }
+    }
+
+    // from 1024
+    @if $media==desktop {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+
+    // to 1023
+    @if $media==to_desktop {
+        @media screen and (max-width: $desktop - 1) {
+            @content;
+        }
+    }
+
+    // from 768
+    @if $media==from_tablet {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+}
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+@mixin align($vertical:top, $display: inline-block) {
+    display: $display;
+    vertical-align: $vertical;
+}
+
+@mixin site_width($width: $site_width) {
+    margin: 0 auto;
+    max-width: $width;
+
+    @include respond-to(mobile) {
+        padding: 0 $global_mobile_padding;
+    }
+
+    @include respond-to(tablet) {
+        padding: 0 $global_tablet_padding;
+    }
+
+    @include respond-to(desktop) {
+        padding: 0 $global_desktop_padding;
+    }
+}
