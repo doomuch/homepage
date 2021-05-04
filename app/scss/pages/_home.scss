@@ -27,6 +27,7 @@ section a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "title title" "... desc";
   width: max-content;
+  overflow: hidden;
 
   &-title {
     height: 100%;
@@ -185,18 +186,45 @@ section a {
   }
 }
 
-@include respond-to(mobile) {
+
+@include respond-to(to_desktop) {
   .opening {
+    grid-template-areas: "title" "desc";
+    width: 98vw;
+
     &-title {
-      font-size: 5rem;
+      font-size: 7.55rem;
+      width: 100vw;
+    }
+
+    &-button {
+      left: 0;
+      top: -28px;
+    }
+
+    &-desc {
+      font-size: 6em;
     }
   }
 }
 
-@include respond-to(tablet) {
+@include respond-to(mobile) {
   .opening {
     &-title {
-      font-size: 7.55rem;
+      font-size: 3rem;
+    }
+
+    &-portal {
+      position: static;
+    }
+
+    &-button {
+      top: 150px;
+      left: 20%;
+    }
+
+    &-desc {
+      font-size: 6em;
     }
   }
 }

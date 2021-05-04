@@ -60,6 +60,7 @@ section a:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  overflow: hidden;
 }
 
 .opening-title {
@@ -231,14 +232,36 @@ section a:hover {
   background-color: white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
+  .opening {
+    grid-template-areas: "title" "desc";
+    width: 98vw;
+  }
   .opening-title {
-    font-size: 5rem;
+    font-size: 7.55rem;
+    width: 100vw;
+  }
+  .opening-button {
+    left: 0;
+    top: -28px;
+  }
+  .opening-desc {
+    font-size: 6em;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 783px) {
   .opening-title {
-    font-size: 7.55rem;
+    font-size: 3rem;
+  }
+  .opening-portal {
+    position: static;
+  }
+  .opening-button {
+    top: 150px;
+    left: 20%;
+  }
+  .opening-desc {
+    font-size: 6em;
   }
 }
