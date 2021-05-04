@@ -265,3 +265,7 @@ section a:hover {
     font-size: 6em;
   }
 }
+
+.twitter:hover {
+  opacity: 0.7;
+}
