@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Résumé</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Courgette&family=Fira+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <dialog open class="opening" id="dialog">
+    <h3 class="opening-title">Death is inev<span class="opening-portal">i<button class="opening-button" id="dialog-button"></button></span>table</h3>
+    <p class="opening-desc">Reach the red dot</p>
+  </dialog>
+  <main id="main" class="main">
+    <article>
+      <div class="page" style="border-color: black;">
+        <div class="stackable grid">
+          <div class="row">
+            <div class="three wide center aligned column">
+              <div class="avatar-wrapper">
+                <object class="avatar" data="assets/images/avatar.svg" role="img" aria-label="My profile picture"></object>
+              </div>
+            </div>
+            <div class="thirteen wide column">
+              <div class="stackable grid">
+                <div class="sixteen wide column">
+                  <h1 class="name">Death</h1>
+                  <div class="job">destroyer of worlds</div>
+                  <ul class="contacts">
+                    <li>
+                      <a href="https://twitter.com/DeathCafe" rel="author" class="twitter">
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                               class="icon"
+                               viewBox="0 0 50 50"
+                               style=" fill:#000000;"><path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path></svg>
+                        <span>Death Cafe</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:death@tranquilize.me" rel="author" class="mail">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                        <span>Death@tranquilize.me</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/death-code" rel="author" class="github">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        <span>Death Code</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sixteen wide mobile only column">
+                  <div class="divider"></div>
+                </div>
+                <div class="sixteen wide column resume">
+                  <h2 class="resume-heading">Résumé</h2>
+                  <div class="resume-desc">
+                    <p class="resume-desc-p1">I am death the destroyer of worlds. I was invented by ritual services companies to create a new niche in the market. Just kidding. Actually, I am as old as life.</p>
+                    <p class="resume-desc-p2">My work is pretty obvious, though it can be interpreted in many different ways. Some may think of me as part of life, while others may consider me as something that is opposed to it.</p>
+                    <p class="resume-desc-p3">I am the only thing that will 100% happen to you. Let's dive into some details to know each other better.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="sixteen wide column">
+              <div class="fat divider"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="ten wide column">
+              <h3>My story</h3>
+              <h6>Where it all came from?</h6>
+              <ol class="inverted">
+                <li class="event">
+                  <p class="event-name">Genesis</p>
+                  <p class="event-time">Around 4 billion years ago</p>
+                  <p class="event-desc">Some weird shit happened and life was born. Once there is life, death comes with it. The first living
+                    creature has died. As life evolves, death takes shape of some possible state of organism, that every
+                    creature should avoid at all costs.</p>
+                </li>
+                <li class="event">
+                  <p class="event-name">Emergence</p>
+                  <p class="event-time">Less than a billion years ago</p>
+                  <p class="event-desc">Simple cells evolved into multicellular organisms. There is no clear distinction when this has happened, but as complexity grows, systems called animals began creating an inner representation of outer world. Now death exists not only as something that is opposed to life, like a shadow is opposed to light, but as some obscure feeling of the coming nothingness.</p>
+                </li>
+                <li class="event">
+                  <p class="event-name">Incarnation</p>
+                  <ul>
+                    <li class="event">
+                      <p>Mainstream version</p>
+                      <p class="event-time">5508 B.C.</p>
+                      <p class="event-desc">Adam and Eve have <span class="strike">done some horny things</span> <span class="strike">bought MacBook</span> eat some
+                        apples and therefore were exiled from the Garden of Eden. They have known the fruit of
+                        knowledge. And this knowledge was the empty nature of reality. They realized that life cannot
+                        exist without death and they were doomed by this burden. Thus death (me) gains its second
+                        birth.</p>
+                    </li>
+                    <li class="details">
+                      <input type="checkbox" id="alternate">
+                      <label for="alternate" class="summary">Alternate version
+                        <sup><em>Seems to be not so realistic, though</em></sup></label>
+                      <div>
+                        <p class="event-time">< 2 million years ago</p>
+                        <p class="event-desk">As animals developed, their inner world did too. The obscure feeling of life became more clear. Symbols were born. Each of them aims to reflect a piece of reality in a mental world. Every time a new word is spoken, the thing it is describing is discovered. The word that means "death" was spoken for the first time.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="event">
+                  <p class="event-name">DLC</p>
+                  <p class="event-time">near 30 A.D.</p>
+                  <p class="event-desc">Some random people execute a guy named Jesus. In 7 days God noticed that and
+                    made <code>git reset HEAD~</code> then he has staged all files, but deleted the name of the guy both from
+                    <code>alive.json</code> and <code>death.json</code>. Then he pushed commit to <code>origin/heaven</code> and created pull request to merge branch <code>heaven</code> with <code>emptiness.</code></p>
+                </li>
+              </ol>
+            </div>
+            <div class="six wide column">
+              <section>
+                <h3>Languages</h3>
+                <p class="tags small"><a href="https://en.wikipedia.org/wiki/Extinct_language">THEY CAN DIE TOO</a>, didn't you know?</p>
+              </section>
+              <section>
+                <h3>Skills</h3>
+                <p class="tags small">DISINTEGRATION; DISSOLVING; EXTERMINATION</p>
+              </section>
+              <section>
+                <h3>Character</h3>
+                <p class="tags small">TACTFUL AND WELL-MANNERED</p>
+              </section>
+              <section>
+                <h3>Likes</h3>
+                <p class="tags small">SMELL OF NAPALM IN THE MORNING; EXISTENTIALISM; <span class="nowrap">EDGAR POE; </span><span class="nowrap"><a href="https://deathcafe.com">DEATH CAFES;</a></span><span> WHEN PEOPLE ARE AWARE OF ME;</span> CROWS;  <span class="nowrap"><a href="https://youtu.be/0kQWAqjFJS0">THE MIDNIGHT GOSPEL;</a></span> MAKING SPOILERS ABOUT BOOK/FILM/LIFE;
+                  <a href="https://youtu.be/wcaZcbain2s?t=1670">DOOMER MUSIC;</a></p>
+              </section>
+              <section>
+                <h3>Dislikes</h3>
+                <p class="tags small"><a href="https://en.wikipedia.org/wiki/Immortality"><span class="nowrap">IDEA OF IMMORTALITY;</span></a><span> BLISSFUL IGNORANCE;</span>
+                  <span class="nowrap">ME-DENYING RELIGIONS;</span> <span class="nowrap dislikes-tooltip" id="dislikes">WHEN PEOPLE ...<span class="dislikes-tooltip-text">Think twice before clicking!!</span></span></p>
+              </section>
+              <section class="articles">
+                <h3>Articles</h3>
+                <p><a href="https://www.tandfonline.com/doi/full/10.1080/07481187.2020.1808737">Effects of mortality awareness on attitudes toward dying and death and meaning in life—a randomized controlled trial</a></p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script>
+    const main = $("#main");
+    const dialog = $("#dialog");
+    const button = $("#dialog-button");
+    const dislikes = $("#dislikes");
+
+    button.mouseup(() => {
+      if (alert("of course you are😄") === undefined) {
+        dialog.hide();
+        main.show();
+      }
+    });
+
+   dislikes.click(() => {
+     alert("When people say (think) that they aren't afraid of death, but actually they are😹")
+   });
+  </script>
+  </body>
+</html>
