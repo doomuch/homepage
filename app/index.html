@@ -93,7 +93,7 @@
                   <p class="event-name">Incarnation</p>
                   <ul>
                     <li class="event">
-                      <p class="event-name">Mainstream version</p>
+                      <p>Mainstream version</p>
                       <p class="event-time">5508 b.c.</p>
                       <p class="event-desc">Adam and Eve have <span class="strike">done some horny things</span> <span class="strike">bought MacBook</span> eat some
                         apples and therefore were exiled from the Garden of Eden. They have known the fruit of
@@ -117,18 +117,18 @@
                   <p class="event-time">0 B.C</p>
                   <p class="event-desc">Some random people execute a guy named Jesus. In 7 days God noticed that and
                     made <code>git reset HEAD~</code> then he has staged all files, but deleted the name of the guy both from
-                    <code>alive.json</code> and <code>death.json</code>.</p>
+                    <code>alive.json</code> and <code>death.json</code>. Then he pushed commit to <code>origin/heaven</code> and created pull request to merge branch <code>heaven</code> with <code>emptiness.</code></p>
                 </li>
               </ol>
             </div>
             <div class="six wide column">
               <section>
                 <h3>Languages</h3>
-                <p class="tags small"><span>LITERALLY EVERY</span></p>
+                <p class="tags small"><a href="https://en.wikipedia.org/wiki/Extinct_language">THEY CAN DIE TOO</a>, didn't you know?</p>
               </section>
               <section>
                 <h3>Skills</h3>
-                <p class="tags small">DISINTEGRATION DISSOLVING EXTERMINATION</p>
+                <p class="tags small">DISINTEGRATION; DISSOLVING; EXTERMINATION</p>
               </section>
               <section>
                 <h3>Character</h3>
@@ -136,19 +136,18 @@
               </section>
               <section>
                 <h3>Likes</h3>
-                <p class="tags small">EXISTENTIALISM <span class="nowrap">EDGAR POE</span>
-                  <span class="nowrap"><a href="https://deathcafe.com">DEATH CAFES</a></span><span class="nowrap"> WHEN PEOPLE ARE AWARE ABOUT ME</span> CROWS  <span class="nowrap"><a
-                          href="https://youtu.be/0kQWAqjFJS0">THE MIDNIGHT GOSPEL</a></span></p>
+                <p class="tags small">SMELL OF NAPALM IN THE MORNING; EXISTENTIALISM; <span class="nowrap">EDGAR POE; </span><span class="nowrap"><a href="https://deathcafe.com">DEATH CAFES;</a></span><span> WHEN PEOPLE ARE AWARE OF ME;</span> CROWS;  <span class="nowrap"><a href="https://youtu.be/0kQWAqjFJS0">THE MIDNIGHT GOSPEL;</a></span> MAKING SPOILERS ABOUT BOOK/FILM/LIFE;
+                  <a href="https://youtu.be/wcaZcbain2s?t=1670">DOOMER MUSIC;</a></p>
               </section>
               <section>
-                <h3>Dislikes&#x1f61e;</h3>
-                <p class="tags small"><span class="nowrap">IDEA OF IMMORTALITY</span> <span class="nowrap">BLISSFUL IGNORANCE</span>
-                  <span class="nowrap">ME-DENYING RELIGIONS</span></p>
+                <h3>Dislikes</h3>
+                <p class="tags small"><a href="https://en.wikipedia.org/wiki/Immortality"><span class="nowrap">IDEA OF IMMORTALITY;</span></a><span> BLISSFUL IGNORANCE;</span>
+                  <span class="nowrap">ME-DENYING RELIGIONS;</span> <span class="nowrap dislikes-tooltip" id="dislikes">WHEN PEOPLE ...<span class="dislikes-tooltip-text">Think twice before clicking!!</span></span></p>
               </section>
-              <!-- dislikes -->
-              <!-- wants -->
-              <!-- education -->
-              <!-- articles -->
+              <section class="articles">
+                <h3>Articles</h3>
+                <p><a href="https://www.tandfonline.com/doi/full/10.1080/07481187.2020.1808737">Effects of mortality awareness on attitudes toward dying and death and meaning in life—a randomized controlled trial</a></p>
+              </section>
             </div>
           </div>
         </div>
@@ -159,14 +158,18 @@
     const main = $("#main");
     const dialog = $("#dialog");
     const button = $("#dialog-button");
+    const dislikes = $("#dislikes");
+
     button.mouseup(() => {
       if (alert("of course you are😄") === undefined) {
         dialog.hide();
         main.show();
       }
     });
-    dialog.hide();
-    main.show();
+
+   dislikes.click(() => {
+     alert("When people say (think) that they aren't afraid of death, but actually they are😹")
+   });
   </script>
   </body>
 </html>

@@ -31,6 +31,23 @@ body {
   font-family: "Fira", sans-serif;
 }
 
+section a {
+  color: black;
+  -webkit-text-decoration: underline wavy rgba(0, 0, 0, 0.75);
+          text-decoration: underline wavy rgba(0, 0, 0, 0.75);
+}
+
+section a:hover {
+  background-color: black;
+  color: white;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.avatar {
+  width: 150%;
+}
+
 .main {
   display: none;
 }
@@ -165,6 +182,53 @@ body {
 
 .event ul {
   margin-left: 1rem;
+}
+
+.event-name {
+  font-weight: 600;
+}
+
+.event-time {
+  font-style: italic;
+}
+
+.dislikes-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.dislikes-tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  padding: 5px 10px;
+  top: 20px;
+  right: -38px;
+}
+
+.dislikes-tooltip:hover {
+  font-weight: bold;
+}
+
+.dislikes-tooltip:hover .dislikes-tooltip-text {
+  visibility: visible;
+}
+
+.articles a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.articles a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
 }
 
 @media screen and (max-width: 767px) {
