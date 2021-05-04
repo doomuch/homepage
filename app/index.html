@@ -5,11 +5,18 @@
     <title>Résumé</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Courgette&family=Fira+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-  <main>
+  <dialog open class="opening" id="dialog">
+    <h3 class="opening-title">Death is inev<span class="opening-portal">i<button class="opening-button" id="dialog-button"></button></span>table</h3>
+    <p class="opening-desc">Reach the red dot</p>
+  </dialog>
+  <main id="main" class="main">
     <article>
-      <div class="page" style="border-color: midnightblue;">
+      <div class="page" style="border-color: black;">
         <div class="stackable grid">
           <div class="row">
             <div class="three wide center aligned column">
@@ -33,9 +40,9 @@
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:death@tranquilize.com" rel="author" class="mail">
+                      <a href="mailto:death@tranquilize.me" rel="author" class="mail">
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
-                        <span>death@tranquilize.com</span>
+                        <span>Death@tranquilize.me</span>
                       </a>
                     </li>
                     <li>
@@ -49,12 +56,13 @@
                 <div class="sixteen wide mobile only column">
                   <div class="divider"></div>
                 </div>
-                <div class="sixteen wide column">
-                  <h2>Résumé</h2>
-<!--                  <p>&mdash; Hello! I’m a skilled frontend developer<strong style="margin-left: 0.0625em;">*</strong> with 7 years of experience in UI/UX design, application development, and database modeling. I strive to craft precise, responsive, fast, easy-to-use environments with both strong purpose and great looks.</p>-->
-                  <p>I am death the destroyer of worlds. I was invented by ritual services companies to create a new niche in the market. Just kidding😄. Actually, I am as old as life.</p>
-                  <p>My work is pretty obvious, though it can be interpreted in many different ways. Some may think of me as part of life, while others may consider me as something that is opposed to it.</p>
-                  <p>I am the only thing that will happen to you. Let's dive into some details to know each other better.</p>
+                <div class="sixteen wide column resume">
+                  <h2 class="resume-heading">Résumé</h2>
+                  <div class="resume-desc">
+                    <p class="resume-desc-p1">I am death the destroyer of worlds. I was invented by ritual services companies to create a new niche in the market. Just kidding. Actually, I am as old as life.</p>
+                    <p class="resume-desc-p2">My work is pretty obvious, though it can be interpreted in many different ways. Some may think of me as part of life, while others may consider me as something that is opposed to it.</p>
+                    <p class="resume-desc-p3">I am the only thing that will 100% happen to you. Let's dive into some details to know each other better.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -66,7 +74,52 @@
           </div>
           <div class="row">
             <div class="ten wide column">
-              <!-- Experience -->
+              <h3>My story</h3>
+              <h6>Where it all came from?</h6>
+              <ol class="inverted">
+                <li class="event">
+                  <p class="event-name">Genesis</p>
+                  <p class="event-time">Around 4 billion years ago</p>
+                  <p class="event-desc">Some weird shit happened and life was born. Once there is life, death comes with it. The first living
+                    creature has died. As life evolves, death takes shape of some possible state of organism, that every
+                    creature should avoid at all costs.</p>
+                </li>
+                <li class="event">
+                  <p class="event-name">Emergence</p>
+                  <p class="event-time">Less than a billion years ago</p>
+                  <p class="event-desc">Simple cells evolved into multicellular organisms. There is no clear distinction when this has happened, but as complexity grows, systems called animals began creating an inner representation of outer world. Now death exists not only as something that is opposed to life, like a shadow is opposed to light, but as some obscure feeling of the coming nothingness.</p>
+                </li>
+                <li class="event">
+                  <p class="event-name">Incarnation</p>
+                  <ul>
+                    <li class="event">
+                      <p class="event-name">Mainstream version</p>
+                      <p class="event-time">5508 b.c.</p>
+                      <p class="event-desc">Adam and Eve have <span class="strike">done some horny things</span> <span class="strike">bought MacBook</span> eat some
+                        apples and therefore were exiled from the Garden of Eden. They have known the fruit of
+                        knowledge. And this knowledge was the empty nature of reality. They realized that life cannot
+                        exist without death and they were doomed by this burden. Thus death (me) gains its second
+                        birth.</p>
+                    </li>
+                    <li class="details">
+                      <input type="checkbox" id="alternate">
+                      <label for="alternate" class="summary">Alternate version
+                        <sup><em>Seems to be not so realistic, though</em></sup></label>
+                      <div>
+                        <p class="event-time">< 2 million years ago</p>
+                        <p class="event-desk">As animals developed, their inner world did too. The obscure feeling of life became more clear. Symbols were born. Each of them aims to reflect a piece of reality in a mental world. Every time a new word is spoken, the thing it is describing is discovered. The word that means "death" was spoken for the first time.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="event">
+                  <p class="event-name">DLC</p>
+                  <p class="event-time">0 B.C</p>
+                  <p class="event-desc">Some random people execute a guy named Jesus. In 7 days God noticed that and
+                    made <code>git reset HEAD~</code> then he has staged all files, but deleted the name of the guy both from
+                    <code>alive.json</code> and <code>death.json</code>.</p>
+                </li>
+              </ol>
             </div>
             <div class="six wide column">
               <!-- Languages -->
@@ -83,5 +136,16 @@
       </div>
     </article>
   </main>
+  <script>
+    const main = $("#main");
+    const dialog = $("#dialog");
+    const button = $("#dialog-button");
+    button.mouseup(() => {
+      if (alert("Of course you are😄") === undefined) {
+        dialog.hide();
+        main.show();
+      }
+    });
+  </script>
   </body>
 </html>

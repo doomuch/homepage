@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e67ed9-ad43-49b1-993e-ebc87c26a959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/avatar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/components/_classes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/layout/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/pages/_home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/utilities/_extends.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/utilities/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/utilities/_normalize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/utilities/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/utilities/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/utilities/_extends.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/utilities/_extends.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/utilities/_normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/utilities/_variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +26,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/scss/pages/_home.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gulpfile.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/scss/main.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/scss/utilities/_extends.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/scss/utilities/_variables.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/scss/utilities/_mixins.scss" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1ryWU45DR3MzhpLceDCb7mg0VAR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -81,7 +87,9 @@
       <updated>1619948823612</updated>
       <workItem from="1619948830924" duration="3938000" />
       <workItem from="1620028350576" duration="3549000" />
-      <workItem from="1620032112928" duration="4400000" />
+      <workItem from="1620032112928" duration="13999000" />
+      <workItem from="1620111570709" duration="14209000" />
+      <workItem from="1620127550816" duration="410000" />
     </task>
     <servers />
   </component>
