@@ -228,3 +228,9 @@ section a {
     }
   }
 }
+
+.twitter {
+  &:hover {
+    opacity: 0.7;
+  }
+}
